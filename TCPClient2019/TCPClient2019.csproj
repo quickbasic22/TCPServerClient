@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E6B6E0B8-728D-4425-8677-12284CA1CE4D}</ProjectGuid>
+    <ProjectGuid>{81A1DFDE-FB1D-4487-BC6F-673EE923A0C6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TCPServer2019</RootNamespace>
-    <AssemblyName>TCPServer2019</AssemblyName>
+    <RootNamespace>TCPClient2019</RootNamespace>
+    <AssemblyName>TCPClient2019</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

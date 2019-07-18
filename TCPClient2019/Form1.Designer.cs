@@ -1,4 +1,4 @@
-﻿namespace TCPServer2019
+﻿namespace TCPClient2019
 {
     partial class Form1
     {
@@ -33,7 +33,7 @@
             this.ButtonClose = new System.Windows.Forms.Button();
             this.TextMessage = new System.Windows.Forms.TextBox();
             this.TextStatus = new System.Windows.Forms.TextBox();
-            this.RadioGotClientAddress = new System.Windows.Forms.RadioButton();
+            this.RadioGotServerAddress = new System.Windows.Forms.RadioButton();
             this.TextRemotePort = new System.Windows.Forms.TextBox();
             this.TextRemoteAddress = new System.Windows.Forms.TextBox();
             this.LabelRemotePort = new System.Windows.Forms.Label();
@@ -47,124 +47,124 @@
             // 
             // ButtonStart
             // 
-            this.ButtonStart.Location = new System.Drawing.Point(536, 401);
+            this.ButtonStart.Location = new System.Drawing.Point(536, 399);
             this.ButtonStart.Name = "ButtonStart";
             this.ButtonStart.Size = new System.Drawing.Size(75, 23);
-            this.ButtonStart.TabIndex = 27;
+            this.ButtonStart.TabIndex = 41;
             this.ButtonStart.Text = "Start";
             this.ButtonStart.UseVisualStyleBackColor = true;
             this.ButtonStart.Click += new System.EventHandler(this.ButtonStart_Click_1);
             // 
             // ButtonSend
             // 
-            this.ButtonSend.Location = new System.Drawing.Point(347, 401);
+            this.ButtonSend.Location = new System.Drawing.Point(347, 399);
             this.ButtonSend.Name = "ButtonSend";
             this.ButtonSend.Size = new System.Drawing.Size(75, 23);
-            this.ButtonSend.TabIndex = 26;
+            this.ButtonSend.TabIndex = 40;
             this.ButtonSend.Text = "Send";
             this.ButtonSend.UseVisualStyleBackColor = true;
             this.ButtonSend.Click += new System.EventHandler(this.ButtonSend_Click_1);
             // 
             // ButtonClose
             // 
-            this.ButtonClose.Location = new System.Drawing.Point(183, 401);
+            this.ButtonClose.Location = new System.Drawing.Point(183, 399);
             this.ButtonClose.Name = "ButtonClose";
             this.ButtonClose.Size = new System.Drawing.Size(75, 23);
-            this.ButtonClose.TabIndex = 25;
+            this.ButtonClose.TabIndex = 39;
             this.ButtonClose.Text = "Close";
             this.ButtonClose.UseVisualStyleBackColor = true;
-            this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click_1);
+            this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
             // TextMessage
             // 
-            this.TextMessage.Location = new System.Drawing.Point(97, 283);
+            this.TextMessage.Location = new System.Drawing.Point(97, 281);
             this.TextMessage.Multiline = true;
             this.TextMessage.Name = "TextMessage";
             this.TextMessage.Size = new System.Drawing.Size(606, 77);
-            this.TextMessage.TabIndex = 24;
+            this.TextMessage.TabIndex = 38;
             // 
             // TextStatus
             // 
-            this.TextStatus.Location = new System.Drawing.Point(97, 205);
+            this.TextStatus.Location = new System.Drawing.Point(97, 203);
             this.TextStatus.Multiline = true;
             this.TextStatus.Name = "TextStatus";
             this.TextStatus.Size = new System.Drawing.Size(606, 72);
-            this.TextStatus.TabIndex = 23;
+            this.TextStatus.TabIndex = 37;
             // 
-            // RadioGotClientAddress
+            // RadioGotServerAddress
             // 
-            this.RadioGotClientAddress.AutoSize = true;
-            this.RadioGotClientAddress.Location = new System.Drawing.Point(328, 30);
-            this.RadioGotClientAddress.Name = "RadioGotClientAddress";
-            this.RadioGotClientAddress.Size = new System.Drawing.Size(106, 17);
-            this.RadioGotClientAddress.TabIndex = 22;
-            this.RadioGotClientAddress.TabStop = true;
-            this.RadioGotClientAddress.Text = "GotClientAddress";
-            this.RadioGotClientAddress.UseVisualStyleBackColor = true;
+            this.RadioGotServerAddress.AutoSize = true;
+            this.RadioGotServerAddress.Location = new System.Drawing.Point(328, 28);
+            this.RadioGotServerAddress.Name = "RadioGotServerAddress";
+            this.RadioGotServerAddress.Size = new System.Drawing.Size(111, 17);
+            this.RadioGotServerAddress.TabIndex = 36;
+            this.RadioGotServerAddress.TabStop = true;
+            this.RadioGotServerAddress.Text = "GotServerAddress";
+            this.RadioGotServerAddress.UseVisualStyleBackColor = true;
             // 
             // TextRemotePort
             // 
-            this.TextRemotePort.Location = new System.Drawing.Point(462, 160);
+            this.TextRemotePort.Location = new System.Drawing.Point(462, 158);
             this.TextRemotePort.Name = "TextRemotePort";
             this.TextRemotePort.Size = new System.Drawing.Size(100, 20);
-            this.TextRemotePort.TabIndex = 21;
+            this.TextRemotePort.TabIndex = 35;
             // 
             // TextRemoteAddress
             // 
-            this.TextRemoteAddress.Location = new System.Drawing.Point(208, 155);
+            this.TextRemoteAddress.Location = new System.Drawing.Point(208, 153);
             this.TextRemoteAddress.Name = "TextRemoteAddress";
             this.TextRemoteAddress.Size = new System.Drawing.Size(100, 20);
-            this.TextRemoteAddress.TabIndex = 20;
+            this.TextRemoteAddress.TabIndex = 34;
             // 
             // LabelRemotePort
             // 
             this.LabelRemotePort.AutoSize = true;
-            this.LabelRemotePort.Location = new System.Drawing.Point(387, 163);
+            this.LabelRemotePort.Location = new System.Drawing.Point(387, 161);
             this.LabelRemotePort.Name = "LabelRemotePort";
             this.LabelRemotePort.Size = new System.Drawing.Size(66, 13);
-            this.LabelRemotePort.TabIndex = 19;
+            this.LabelRemotePort.TabIndex = 33;
             this.LabelRemotePort.Text = "Remote Port";
             // 
             // LabelRemoteAddress
             // 
             this.LabelRemoteAddress.AutoSize = true;
-            this.LabelRemoteAddress.Location = new System.Drawing.Point(107, 163);
+            this.LabelRemoteAddress.Location = new System.Drawing.Point(107, 161);
             this.LabelRemoteAddress.Name = "LabelRemoteAddress";
             this.LabelRemoteAddress.Size = new System.Drawing.Size(85, 13);
-            this.LabelRemoteAddress.TabIndex = 18;
+            this.LabelRemoteAddress.TabIndex = 32;
             this.LabelRemoteAddress.Text = "Remote Address";
             // 
             // LabelLocalPort
             // 
             this.LabelLocalPort.AutoSize = true;
-            this.LabelLocalPort.Location = new System.Drawing.Point(388, 94);
+            this.LabelLocalPort.Location = new System.Drawing.Point(388, 92);
             this.LabelLocalPort.Name = "LabelLocalPort";
             this.LabelLocalPort.Size = new System.Drawing.Size(74, 13);
-            this.LabelLocalPort.TabIndex = 17;
+            this.LabelLocalPort.TabIndex = 31;
             this.LabelLocalPort.Text = "Local Address";
             // 
             // LabelLocalAddress
             // 
             this.LabelLocalAddress.AutoSize = true;
-            this.LabelLocalAddress.Location = new System.Drawing.Point(104, 94);
+            this.LabelLocalAddress.Location = new System.Drawing.Point(104, 92);
             this.LabelLocalAddress.Name = "LabelLocalAddress";
             this.LabelLocalAddress.Size = new System.Drawing.Size(74, 13);
-            this.LabelLocalAddress.TabIndex = 16;
+            this.LabelLocalAddress.TabIndex = 30;
             this.LabelLocalAddress.Text = "Local Address";
             // 
             // TextLocalPort
             // 
-            this.TextLocalPort.Location = new System.Drawing.Point(462, 88);
+            this.TextLocalPort.Location = new System.Drawing.Point(462, 86);
             this.TextLocalPort.Name = "TextLocalPort";
             this.TextLocalPort.Size = new System.Drawing.Size(100, 20);
-            this.TextLocalPort.TabIndex = 15;
+            this.TextLocalPort.TabIndex = 29;
             // 
             // TextLocalAddress
             // 
-            this.TextLocalAddress.Location = new System.Drawing.Point(198, 88);
+            this.TextLocalAddress.Location = new System.Drawing.Point(198, 86);
             this.TextLocalAddress.Name = "TextLocalAddress";
             this.TextLocalAddress.Size = new System.Drawing.Size(100, 20);
-            this.TextLocalAddress.TabIndex = 14;
+            this.TextLocalAddress.TabIndex = 28;
             // 
             // backgroundWorker1
             // 
@@ -181,7 +181,7 @@
             this.Controls.Add(this.ButtonClose);
             this.Controls.Add(this.TextMessage);
             this.Controls.Add(this.TextStatus);
-            this.Controls.Add(this.RadioGotClientAddress);
+            this.Controls.Add(this.RadioGotServerAddress);
             this.Controls.Add(this.TextRemotePort);
             this.Controls.Add(this.TextRemoteAddress);
             this.Controls.Add(this.LabelRemotePort);
@@ -191,7 +191,7 @@
             this.Controls.Add(this.TextLocalPort);
             this.Controls.Add(this.TextLocalAddress);
             this.Name = "Form1";
-            this.Text = "Server";
+            this.Text = "Client";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,7 +204,7 @@
         private System.Windows.Forms.Button ButtonClose;
         private System.Windows.Forms.TextBox TextMessage;
         private System.Windows.Forms.TextBox TextStatus;
-        private System.Windows.Forms.RadioButton RadioGotClientAddress;
+        private System.Windows.Forms.RadioButton RadioGotServerAddress;
         private System.Windows.Forms.TextBox TextRemotePort;
         private System.Windows.Forms.TextBox TextRemoteAddress;
         private System.Windows.Forms.Label LabelRemotePort;
